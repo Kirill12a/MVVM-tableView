@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
+    view.backgroundColor = .red
+
     viewModel.getAllTheQuestion { [weak self] in
       self?.questionData = self?.viewModel.questionModel
       DispatchQueue.main.async {
