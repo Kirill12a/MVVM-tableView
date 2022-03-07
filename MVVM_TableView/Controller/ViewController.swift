@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
-    view.backgroundColor = .white
+    view.backgroundColor = .orange
 
     viewModel.getAllTheQuestion { [weak self] in 
       self?.questionData = self?.viewModel.questionModel
