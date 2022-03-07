@@ -15,11 +15,13 @@ class ViewController: UIViewController {
   var viewModel = QuestionViewModel()
   var questionData: DataModel?
 
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
-    view.backgroundColor = .red
+    view.backgroundColor = .white
 
     viewModel.getAllTheQuestion { [weak self] in
       self?.questionData = self?.viewModel.questionModel
