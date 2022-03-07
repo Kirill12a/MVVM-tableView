@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     view.backgroundColor = .white
 
-    viewModel.getAllTheQuestion { [weak self] in
+    viewModel.getAllTheQuestion { [weak self] in 
       self?.questionData = self?.viewModel.questionModel
       DispatchQueue.main.async {
         self?.tableView.reloadData()
