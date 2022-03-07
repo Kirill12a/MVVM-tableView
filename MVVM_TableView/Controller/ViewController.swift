@@ -15,11 +15,15 @@ class ViewController: UIViewController {
   var viewModel = QuestionViewModel()
   var questionData: DataModel?
 
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
-    viewModel.getAllTheQuestion { [weak self] in
+    view.backgroundColor = .white
+
+    viewModel.getAllTheQuestion { [weak self] in 
       self?.questionData = self?.viewModel.questionModel
       DispatchQueue.main.async {
         self?.tableView.reloadData()

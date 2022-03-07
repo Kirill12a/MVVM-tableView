@@ -7,15 +7,18 @@
 
 import Foundation
 
-struct DataModel: Codable {
+struct DataModel: Codable
+{
   var data: QuestionModel?
 }
 
-struct QuestionModel: Codable {
+struct QuestionModel: Codable
+{
   var questions: [Questions]?
 }
 
-struct Questions: Codable {
+struct Questions: Codable
+{
   var correct_answer: String?
   var option_1:String?
   var option_2:String?
